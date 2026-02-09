@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Quiz Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button id="theme-toggle" class="theme-btn">🌙</button>
+
+<div id="start-screen" class="start-screen fade-in">
+    <h1>🎯 Interactive Quiz Challenge</h1>
+    <p>Answer all questions before time runs out!</p>
+    <button id="start-btn">Start Quiz</button>
+</div>
+
+<div class="quiz-container" style="display:none;">
+    <h2 class="quiz-title">Interactive Quiz</h2>
+
+    <div id="timer"></div>
+
+    <div class="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+    <p id="progress-text"></p>
+
+    <div class="question-nav" id="question-nav"></div>
+
+    <div id="quiz" class="fade-in"></div>
+
+    <div class="nav-buttons">
+        <button id="prev-btn">⬅ Previous</button>
+        <button id="flag-btn">🚩 Mark</button>
+        <button id="next-btn">Next ➡</button>
+    </div>
+
+    <button id="submit-btn">Submit Answers</button>
+
+    <div id="result" class="result-box"></div>
+    <button id="restart-btn" style="display:none;">Restart Quiz</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
